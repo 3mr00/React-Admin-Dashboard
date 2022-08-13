@@ -1,5 +1,18 @@
 /* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b5b6b7;
+}
 
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b5b6b7;
+  border-radius: 10px;
+}
 :root {
   --yellow: linear-gradient(180deg, #f8d49a -146.42%, #fad79d -46.42%);
   --orange: #fca61f;
@@ -12,7 +25,9 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   --activeItem: #f799a354;
 }
-
+body {
+  overflow: hidden !important;
+}
 .App {
   /* padding: 0.5rem 3.5rem; */
   color: var(--black);
